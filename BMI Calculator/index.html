@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand fixed-top pt-3 navibar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="C:\Users\satee\OneDrive\Desktop\Portfolio\Images\logo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+              </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a style="color:red" class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button onclick="turnblack()" class="btn btn-warning">Black Mode</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br><br><br>
+    <div class="container block">
+        <br>
+        <h1 class="heads">BMI Calculator Using HTML , CSS & JavaScript</h1>
+        <br>
+        <img  class="img-responsive calculator"  src="Images/calculator.png" alt="image">
+        <br><br>
+        <h2>Introduction</h2><br>
+        <p>The Body Mass Index (BMI) calculator is a web application designed to help users calculate their BMI based on their height and weight. BMI is a measure of body fat based on an individual's weight in relation to their height.This calculator provides a convenient way for users to assess their body composition and determine if they are underweight, normal weight, overweight, or obese according to standard BMI categories.</p>
+        <br>
+        <h2>Key Features</h2>
+        <br>
+        <ul>
+            <li>
+                <span class="sideheads">User Input:</span> The calculator allows users to enter their height and weight in metric units (centimeters and kilograms) or imperial units (feet, inches, and pounds).
+            </li><br>
+            <li>
+                <span class="sideheads">BMI Calculation:</span> The application calculates the BMI using the formula: <br>
+               <kbd>BMI = weight (kg) / (height (m))^2</kbd> <br> 
+               The result is then displayed to the user.
+            </li><br>
+            <li>
+                <span class="sideheads">BMI Categories:</span> The calculated BMI is categorized into different ranges such as
+                <ol>
+                    <li>Underweight</li>
+                    <li>Normal weight</li>
+                    <li>Overweight</li>
+                    <li>Obese</li>
+                </ol>
+                These categories provide users with an understanding of their current body composition.
+            </li><br>
+            <li>
+                <span class="sideheads">Responsive Design:</span> The web application is designed to be responsive, adapting to different screen sizes and devices, ensuring optimal user experience across desktop, tablet, and mobile devices.
+            </li><br>
+            <li>
+                <span class="sideheads">Attractive Layout Design:</span> The user interface is visually appealing, featuring a modern and clean design to enhance the overall user experience.
+            </li><br>
+            <li>
+                <span class="sideheads">Background Animation:</span> The application incorporates a background animation to add an element of visual interest and engagement, making the user experience more enjoyable.
+            </li><br>
+        </ul><br>
+    </div>
+    <br><br>
+    <div class="container block">
+        <div class="container calcibody">
+            <h1 style="color: #333;">BMI Calculator</h1>
+            <div class="input-container">
+              <label for="height">Height:</label>
+              <input type="number" id="height" placeholder="Height (cm)">
+            </div>
+            <div class="input-container">
+              <label for="weight">Weight:</label>
+              <input type="number" id="weight" placeholder="Weight (kg)">
+            </div>
+            <button onclick="calculateBMI()">Calculate</button>
+            <div id="result"></div>
+          </div>
+    </div>
+    <br> <br>
+    <div class="container contact">
+        <h2><span class="heads">Contact Me</span></h2><br><br>
+        <div class="container d-flex">
+            <div class="container contactleft">
+                <form action="action.php">
+                    <div class="form-group align-items-center">
+                        <input class="form-control ips" type="text" placeholder="Your Name" required><br>
+                        <input class="form-control ips" type="text"  placeholder="Mobile Number"required><br>
+                        <textarea class="form-control ips" rows="3" placeholder="Enter your message here"></textarea><br>
+                        <div class="btn shadow__btn">Submit</div>
+                    </div>
+                </form>
+            </div>
+            <div class="container contactright">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-snapchat-ghost"></a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container copyright text-muted">
+        <footer>
+            <p>&copy; 2023 <span class="heads">Sateesh Portfolio</span>. All Rights Reserved.</p>
+          </footer>
+    </div>
+    <script src="calculate.js"></script>
+</body>
+</html>

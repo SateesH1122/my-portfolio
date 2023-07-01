@@ -1,0 +1,157 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.navibar{
+    background-color: rgb(1, 8, 33);
+}
+.navbar.navbar-expand {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+.nav-link {
+    color:white;
+}
+.nav-link:hover {
+    color:white;
+}
+.navbar .nav-link.active {
+    color: white;
+}
+.intro{
+    background-color: #010821;
+    color:white;
+    padding:2% 2% 0 2%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.intro h1 {
+    flex: 1;
+    text-align: left;
+}
+.name{
+    color:red;
+}
+.heads{
+    color:red;
+}
+.intro .photo {
+    flex-shrink: 0;
+    width: auto;
+    height: 400px;
+    margin-left: 20px;
+}
+
+.about{
+    background-color: rgb(1, 8, 33);
+    color:white;
+    padding:2%;
+    border-radius: 20px;
+}
+.pro{
+    background-color:white;
+    color:black;
+    padding:2%;
+    margin:2%;
+    border-radius: 15px;
+}
+.projects{
+    background-color: rgb(1, 8, 33);
+    color:white;
+    padding:2% 0 2% 2%;
+    border-radius: 20px;
+}
+.shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    background: rgb(0,140,255);
+    }
+.shadow__btn:hover {
+    background-color:rgb(1, 8, 33);
+    color:white;
+    box-shadow: 0 0 5px rgb(0,140,255),
+                0 0 25px rgb(0,140,255),
+                0 0 50px rgb(0,140,255),
+                0 0 100px rgb(0,140,255);
+}
+.contact{
+    background-color: rgb(1, 8, 33);
+    color:white;
+    padding:2%;
+    border-radius: 20px;   
+    
+}
+.contactleft{
+    width: 100%;
+    float:left;
+}
+.contactright{
+    padding-top: 6%;
+}
+.ips{
+    width:70%;
+}
+
+.fa {
+    padding:10px;
+    font-size: 30px;
+    width: 50px;
+    text-decoration: none;
+    margin: 5px 15px;
+    display: inline-block;
+    text-align:center;
+    transition: transform 0.3s;
+}
+.fa:hover {
+    box-shadow: 0 0 5px rgb(0,140,255),
+                0 0 25px rgb(0,140,255),
+                0 0 50px rgb(0,140,255),
+                0 0 100px rgb(0,140,255);
+    transform: scale(1.2);
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.copyright{
+    color:white;
+    padding:2%;
+    border-radius: 20px;
+    text-align: center;
+}
+.container.contactright a {
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
